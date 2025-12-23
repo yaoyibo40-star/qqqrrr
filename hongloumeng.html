@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>红楼梦 - 四大名著阅读网</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>四大名著阅读网</h1>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="list.html">作品列表</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="reader-tools">
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+    <button onclick="resetFont()">默认</button>
+    <button onclick="toggleMode()">夜间模式</button>
+  </div>
+
+  <article id="content">
+    <h2>《红楼梦》第一回</h2>
+    <p>
+      甄士隐梦幻识通灵，贾雨村风尘怀闺秀。
+      作者借神话传说展开家族兴衰的故事。
+    </p>
+    <p>
+      小说通过贾、史、王、薛四大家族的命运，
+      深刻揭示封建社会的矛盾与悲剧。
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 四大名著阅读网</p>
+</footer>
+
+<script>
+  let fontSize = 16;
+  function changeFontSize(step) {
+    fontSize += step;
+    document.getElementById("content").style.fontSize = fontSize + "px";
+  }
+  function resetFont() {
+    fontSize = 16;
+    document.getElementById("content").style.fontSize = "16px";
+  }
+  function toggleMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>

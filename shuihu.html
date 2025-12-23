@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>水浒传 - 四大名著阅读网</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>四大名著阅读网</h1>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="list.html">作品列表</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="reader-tools">
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+    <button onclick="resetFont()">默认</button>
+    <button onclick="toggleMode()">夜间模式</button>
+  </div>
+
+  <article id="content">
+    <h2>《水浒传》第一回</h2>
+    <p>
+      北宋末年，社会动荡，民不聊生。
+      一百零八位好汉揭竿而起。
+    </p>
+    <p>
+      梁山泊聚义，体现了反抗压迫、
+      追求正义的精神。
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 四大名著阅读网</p>
+</footer>
+
+<script>
+  let fontSize = 16;
+  function changeFontSize(step) {
+    fontSize += step;
+    document.getElementById("content").style.fontSize = fontSize + "px";
+  }
+  function resetFont() {
+    fontSize = 16;
+    document.getElementById("content").style.fontSize = "16px";
+  }
+  function toggleMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>

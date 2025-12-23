@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>三国演义 - 四大名著阅读网</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>四大名著阅读网</h1>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="list.html">作品列表</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="reader-tools">
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+    <button onclick="resetFont()">默认</button>
+    <button onclick="toggleMode()">夜间模式</button>
+  </div>
+
+  <article id="content">
+    <h2>《三国演义》第一回</h2>
+    <p>
+      话说天下大势，分久必合，合久必分。
+      历史长河中英雄辈出。
+    </p>
+    <p>
+      刘备、曹操、孙权等人物的斗争，
+      展现了乱世中的智谋与忠义。
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 四大名著阅读网</p>
+</footer>
+
+<script>
+  let fontSize = 16;
+  function changeFontSize(step) {
+    fontSize += step;
+    document.getElementById("content").style.fontSize = fontSize + "px";
+  }
+  function resetFont() {
+    fontSize = 16;
+    document.getElementById("content").style.fontSize = "16px";
+  }
+  function toggleMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>

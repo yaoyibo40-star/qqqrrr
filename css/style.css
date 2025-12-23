@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "微软雅黑", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+}
+
+.book-ul a {
+  text-decoration: none;
+  color: #333;
+}
+
+.book-ul a:hover {
+  color: #3498db;
+}
+
+.reader-tools button {
+  margin-right: 8px;
+  padding: 5px 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 30px;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+.intro {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
